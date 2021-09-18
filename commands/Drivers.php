@@ -11,14 +11,14 @@ class Drivers extends Command
      *
      * @var string
      */
-    protected string $signature = 'studio:install:{driver}';
+    protected $signature = 'studio:install:{driver}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected string $description = 'Install driver web-social bot';
+    protected $description = 'Install driver web-social bot';
 
     /**
      * Create a new command instance.
@@ -35,7 +35,7 @@ class Drivers extends Command
      *
      * @return int
      */
-    public function handle(): int
+    public function handle()
     {
         echo 'Start installing driver: ' . $this->argument('driver');
         return 0;
