@@ -4,7 +4,7 @@ namespace VisStudio\Commands;
 
 use Illuminate\Console\Command;
 
-class Test extends Command
+class Drivers extends Command
 {
     /**
      * The name and signature of the console command.

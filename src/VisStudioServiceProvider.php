@@ -3,6 +3,7 @@
 namespace VisStudio;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use VisStudio\Commands\Drivers;
 
 class VisStudioServiceProvider extends BaseServiceProvider
 {
@@ -13,6 +14,11 @@ class VisStudioServiceProvider extends BaseServiceProvider
             __DIR__ . '/../config/VisStudio/vis-studio.php' => config_path('VisStudio/vis-studio.php')
         ]);
 
+        if($this->app->runningInConsole()) {
+            $this->commands([
+                Drivers::class,
+            ]);
+        }
     }
 
     public function register()
