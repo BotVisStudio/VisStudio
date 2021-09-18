@@ -1,0 +1,37 @@
+{
+  "name": "vis-studio/vis-studio",
+  "description": "BotStudio for social web",
+  "type": "library",
+  "minimum-stability": "alpha",
+  "require": {
+    "jeremeamia/superclosure": "^2.4"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.21"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "VisStudio\\": "src/",
+      "VisStudio\\Tests\\": "./tests"
+    }
+  },
+  "authors": [
+    {
+      "name": "Danil Sidorenko",
+      "email": "danilsidorenko00@gmail.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "VisStudio\\VisStudioServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "@php ./vendor/bin/testbench package:discover --ansi"
+    ]
+  }
+}
