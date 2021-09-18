@@ -12,6 +12,7 @@ class VisStudioServiceProvider extends BaseServiceProvider
         $this->publishes([
             __DIR__ . '/../config/VisStudio/vis-studio.php' => config_path('VisStudio/vis-studio.php')
         ]);
+
     }
 
     public function register()

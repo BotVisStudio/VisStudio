@@ -24,8 +24,5 @@ class VisStudio
         $this->config = array_merge($config, $default);
     }
 
-    public function getDrivers()
-    {
 
-    }
 }

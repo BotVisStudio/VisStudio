@@ -13,7 +13,8 @@
   "autoload": {
     "psr-4": {
       "VisStudio\\": "src/",
-      "VisStudio\\Tests\\": "./tests"
+      "VisStudio\\Tests\\": "./tests",
+      "VisStudio\\Commands\\": "./commands"
     }
   },
   "authors": [
