@@ -4,6 +4,7 @@ namespace VisStudio;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 use VisStudio\Commands\Drivers;
+use VisStudio\Commands\Studio;
 
 class VisStudioServiceProvider extends BaseServiceProvider
 {
@@ -17,6 +18,7 @@ class VisStudioServiceProvider extends BaseServiceProvider
         if($this->app->runningInConsole()) {
             $this->commands([
                 Drivers::class,
+                Studio::class,
             ]);
         }
     }
