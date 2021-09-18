@@ -4,21 +4,21 @@ namespace VisStudio\Commands;
 
 use Illuminate\Console\Command;
 
-class Drivers extends Command
+class Studio extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'studio:install {driver}';
+    protected $signature = 'studio';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Install driver web-social bot';
+    protected $description = 'VisStudio Helper';
 
     /**
      * Create a new command instance.
@@ -37,7 +37,9 @@ class Drivers extends Command
      */
     public function handle()
     {
-        echo 'Start installing driver: ' . $this->argument('driver');
+        echo "VisStudio Bot Framework Laravel\n";
+        echo "\nAvailable commands:";
+        echo "\nstudio:install {driver} - Install Driver for Social Web";
         return 0;
     }
 }
